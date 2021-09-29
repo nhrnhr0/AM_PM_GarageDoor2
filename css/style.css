@@ -1,6 +1,8 @@
 body {
   font-size: 1em;
   font-family: "Nanum Gothic", sans-serif;
+  max-width: 100vw;
+  overflow-x: hidden;
   /* margin: 0; */
 }
 
