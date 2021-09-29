@@ -1,0 +1,657 @@
+body {
+  font-size: 1em;
+  font-family: "Nanum Gothic", sans-serif;
+  /* margin: 0; */
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+/* carousel section */
+.carouselSection .mainText .red-pen {
+  display: inline-block;
+  color: red;
+  text-decoration: none;
+  position: relative;
+  padding: 14px 0;
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: 0.040em;
+  z-index: 1;
+}
+
+.carouselSection .mainText .red-pen svg {
+  fill: none;
+  stroke: red;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 338;
+  stroke-dashoffset: 338;
+  stroke-linecap: round;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 60px);
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
+  transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
+  z-index: -1;
+}
+
+.carouselSection .mainText .red-pen.active svg {
+  stroke-dashoffset: 0;
+  opacity: 1;
+  -webkit-transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Hero Section */
+.heroSection {
+  padding: 1em 0;
+  background-image: url("../img/assets/header.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.heroSection .heroHeading {
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-weight: 500;
+  font-size: 3em;
+  margin-top: 0.5em;
+}
+
+.heroSection .heroHeading .smHeroHeading {
+  font-size: 0.7em;
+}
+
+.heroSection .brandLogo {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.heroSection .brandLogo img {
+  height: 180px;
+}
+
+.heroSection .mainBtn {
+  display: inline-block;
+  font-size: 2.2em;
+  color: #57523e;
+  background-color: #f1ce46;
+  padding: 0em 0.5em;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 0.6em;
+}
+
+/* Form Section */
+.formSection {
+  padding: 12em 0 1em 0;
+  position: relative;
+  margin-top: -290px;
+}
+
+.subHeading {
+  color: #3c3c3c;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.formPoints .formPoint {
+  margin-bottom: 0.6em;
+  color: #3c3c3c;
+  position: relative;
+}
+
+.formPoints {
+  margin: 3em 0;
+  padding-left: 1em;
+}
+
+.formPoints .formPoint::after {
+  content: "";
+  background-color: #3c3c3c;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  position: absolute;
+  left: -16px;
+  top: 8px;
+}
+
+.mainText {
+  color: #3c3c3c;
+}
+
+.formSection .contactForm {
+  padding: 2em 2.5em 2.5em 2.5em;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.formSection .contactForm .contactFormHeading {
+  color: #3c3c3c;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+.formSection .contactForm .myContactForm .formInput {
+  border: 1px solid #3c3c3c;
+  padding: 0.3em 0.8em;
+  margin-bottom: 1.8em;
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+}
+
+.formSection .contactForm .myContactForm {
+  margin-top: 1.3em;
+}
+
+.formSection .contactForm .myContactForm .mainBtn {
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+.mainBtn {
+  color: #3c3c3c;
+  display: inline-block;
+  background-color: #f5bf38;
+  padding: 0.4em 1.3em;
+  border: none;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.mainBtn:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.formSection .formSectionImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 117%;
+}
+
+.formSection .contactForm .mainText {
+  font-weight: 600;
+}
+
+/* Details Section */
+.detailsSection {
+  padding: 4em 0;
+}
+
+.detailsSection .subHeading {
+  font-size: 2.4em;
+}
+
+/* Get Section */
+.getSection {
+  padding: 5em 0;
+  position: relative;
+  margin-top: -5em;
+}
+
+.getSection .bullets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 100px;
+}
+
+.getSection .bullets .bullet:nth-child(1) .icon svg .checkmark {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+
+.getSection .bullets .bullet:nth-child(2) .icon svg .checkmark {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.getSection .bullets .bullet:nth-child(3) .icon svg .checkmark {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.getSection .bullets .bullet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2%;
+  padding: 10px;
+  border-radius: 25px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.getSection .bullets .bullet .icon {
+  width: 65px;
+  display: inline;
+  margin: auto;
+  padding-right: 10px;
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 340;
+  }
+  20% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 340;
+  }
+  20% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.getSection .bullets .bullet .icon svg .checkmark {
+  position: absolute;
+  stroke: rgba(0, 199, 27, 0.746);
+  stroke-dashoffset: 0;
+  stroke-dasharray: 360;
+  -webkit-animation: dash 5s ease-out infinite;
+          animation: dash 5s ease-out infinite;
+  opacity: 1;
+}
+
+.getSection .bullets .bullet .text {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.getSection #cta_btn {
+  background-color: #E9BF39;
+  padding: 15px;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.subHeading.red {
+  color: #ff0000;
+  font-weight: bold !important;
+}
+
+.getSection .getSectionHeader {
+  text-align: center;
+  margin-top: 7em;
+}
+
+.getSection .getSectionHeader .subHeading {
+  font-size: 2.1em;
+  font-weight: 500;
+}
+
+.whiteInput {
+  background-color: white;
+  border: none;
+  padding: 1.2em 0.8em;
+  width: 100%;
+  outline: none;
+}
+
+.getSection .subHeading.white {
+  margin-top: 4.5em;
+  color: white;
+}
+
+.getSection .mainBtn {
+  color: #3a3939;
+  font-weight: bold;
+  font-size: 2.5em;
+  padding: 0em 1.3em;
+  line-height: 1.3;
+  margin-top: 0.5em;
+}
+
+.getSection .getSectionCard .getCardHeading {
+  background-color: #e8be39;
+  color: #3a3939;
+  font-size: 1.6em;
+  padding: 0.4em;
+  text-align: center;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.getSection .getSectionCard .formPoints {
+  margin: 0.8em 0;
+  padding-left: 2em;
+  padding-bottom: 0.7em;
+}
+
+.getSection .getSectionCard {
+  background-color: white;
+  margin-bottom: 2em;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  min-height: 250px;
+}
+
+.getSection .getSectionCard .formPoints {
+  margin-bottom: 0.5em;
+}
+
+.getSection .getSectionCard .formPoints .formPoint::after {
+  background-color: #e8be39;
+  height: 9px;
+  width: 9px;
+  left: -23px;
+  top: 7px;
+}
+
+.getSection .getSectionImage {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 102%;
+}
+
+/* Clients Section */
+.clientsSection {
+  padding: 2em 0;
+  margin-top: -5.3em;
+}
+
+.clientsSection .yellowCard {
+  background-image: url("../img/card-bg.png");
+  background-size: cover;
+  min-height: 65vh;
+  position: relative;
+}
+
+.clientsSection .yellowCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.clientsSection .yellowCard .content {
+  padding-top: 25px;
+}
+
+.clientsSection .yellowCard .content .text {
+  padding-left: 4%;
+  padding-right: 4%;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.clientsSection .yellowCard .person {
+  position: relative;
+  width: 100%;
+  padding: 10%;
+  font-size: x-large;
+}
+
+.clientsSection .yellowCard .person .face {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.clientsSection .yellowCard .person .pcontent {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.clientsSection .yellowCard .person .pcontent .pname {
+  font-weight: bold;
+}
+
+/* About Section */
+.aboutSection {
+  padding: 2em 0;
+  background-color: #e8be39;
+  min-height: 50vh;
+  margin: 4.5em 0 2em 0;
+  position: relative;
+}
+
+.aboutSection .container .subHeading {
+  padding-bottom: 20px;
+}
+
+.aboutSection .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutSection .container .content .text {
+  font-size: x-large;
+}
+
+.aboutSection .subHeading {
+  font-size: 2.4em;
+  color: #545353;
+}
+
+.aboutSection .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutSection .container .content .text {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.aboutSection .container .content .vid {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.aboutSection .container .content .vid img {
+  width: 100%;
+}
+
+/* Carousel Section */
+.carouselSection {
+  padding: 3em 0;
+}
+
+.carouselSection .subHeading {
+  font-size: 2.3em;
+  margin: 0.7em 0 0.2em 0;
+}
+
+.carouselSection .mainText {
+  margin-bottom: 0.2em;
+}
+
+/* Theme Selves Section */
+.themeSelvesSection {
+  padding: 12em 0;
+  position: relative;
+  margin-top: -8em;
+  z-index: 2;
+}
+
+.themeSelvesSection .themeImg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.themeSelvesSection .subHeading {
+  z-index: 2;
+  font-size: 2.2em;
+  color: white;
+}
+
+.themeSelvesSection .totalsCard {
+  text-align: center;
+}
+
+.themeSelvesSection .totalsCard .totals {
+  font-size: 2.5em;
+  color: white;
+  font-weight: 600;
+}
+
+.themeSelvesSection .totalsCard .totalsHeading {
+  font-size: 1.2em;
+  color: white;
+  font-weight: 600;
+}
+
+/* Map Section */
+.mapSection {
+  margin-top: -10em;
+  position: relative;
+  z-index: -2;
+}
+
+/* Page Footer */
+.pageFooter {
+  padding: 10em 0 2em 0;
+  position: relative;
+  margin-top: -13em;
+}
+
+.pageFooter .footerImg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 110%;
+}
+
+.pageFooter .whiteInput {
+  padding: 1em;
+}
+
+.pageFooter .mainBtn {
+  background-color: #545353;
+  color: #edc840;
+  text-align: center;
+  width: 100%;
+  padding: 0.9em;
+  font-weight: 600;
+}
+
+.pageFooter .subHeading {
+  color: #545353;
+  font-size: 2.2em;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .getSection .bullets {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .getSection .bullets .bullet .text {
+    top: 0px;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .aboutSection .container .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutSection .container .content .vid {
+    padding-top: 25px;
+  }
+  .heroSection {
+    min-height: 100vh;
+  }
+  .detailsSection .detailImg {
+    width: 100%;
+    margin-top: 2em;
+  }
+  .getSection .subHeading.white {
+    margin-top: 1.5em;
+  }
+  .clientsSection .yellowCard {
+    margin-bottom: 2em;
+  }
+  .pageFooter {
+    padding: 30em 0 2em 0;
+    margin-top: -26em;
+  }
+  .mapSection {
+    margin-top: -14em;
+  }
+  .themeSelvesSection .subHeading {
+    margin-top: 2em;
+    text-align: center;
+  }
+  .heroSection .heroHeading {
+    font-size: 2.5em;
+  }
+  .pageFooter .subHeading {
+    font-size: 2em;
+  }
+  .getSection .getSectionHeader {
+    margin-top: 7em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

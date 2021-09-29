@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <!-- Hero Section -->
+    <section id="hero_section" class="heroSection">
+      <div class="contaier">
+        <a class="brandLogo" href="#">
+          <img src="./img/logo_outline.png" alt="" />
+        </a>
+        <h1 class="heroHeading">
+          Did you ever got stuc
+          <div class="smHeroHeading">outside or inside your garage?</div>
+        </h1>
+        
+        <button class="mainBtn" type="button" onclick="scroll_to_first_form()">let’s prevent it</button>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="formSection">
+      <img class="formSectionImg" src="./img/form-section.png" alt="" />
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 pr-5">
+            <h2 class="subHeading">
+              AM-PM Garage Doors <br />
+              And Locksmith servis
+            </h2>
+            <div class="formPoints">
+              <div class="formPoint">is your door making noises?</div>
+              <div class="formPoint">Is your door getting too old?</div>
+              <div class="formPoint">Is your door heavy to open manually?</div>
+              <div class="formPoint">
+                Is your door not opening or closing properly?
+              </div>
+              <div class="formPoint">Is your remote causing problems?</div>
+              <div class="formPoint">Or you need one more?</div>
+            </div>
+            <div class="mainText">
+              If you answered yes on one of the sections fill the form to get a
+              FREE fast service call from one of our professional technician!
+            </div>
+          </div>
+          <div class="col-lg-5 mt-5 mt-lg-0">
+            <div class="contactForm" id="first_form">
+              <div class="contactFormHeading">
+                Get 10% off now!! <br />
+                When book through here
+              </div>
+              <div class="mainText">
+                For a free consultation call and a free estimate, eave details
+                in he form now!
+              </div>
+              <form action="https://forms.ms-global.co.il/submits/am-pm-garage-doors/" method="POST" class="myContactForm" action="">
+                <input
+                  class="formInput"
+                  type="text"
+                  name="name"
+                  required
+                  id=""
+                  placeholder="name"
+                />
+                <input
+                  class="formInput"
+                  type="text"
+                  name="phone"
+                  required
+                  id=""
+                  placeholder="phone"
+                />
+                <button class="mainBtn" id="scroll_1_target">FREE Estimate Now!</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="detailsSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 pr-3 pr-lg-5 mt-5" data-aos="fade-right">
+            <h2 class="subHeading">
+              Don’t let your door surprise you, save time and money by a quick
+              visit of a technician
+            </h2>
+            <div class="mainText mt-3">
+              injuries, damage and expensive repairs can be prevented by
+              maintenance and inspection of the garage door by a professional
+              technician once a year.
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-left">
+            <img class="detailImg" src="./img/side_image.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Section -->
+    <section class="getSection">
+      <img class="getSectionImage" src="./img/get-section-bg_blue.png" alt="" />
+      <div class="container">
+        <div class="getSectionHeader" data-aos="fade-down">
+          <h2 class="subHeading red">Warning</h2>
+          <h2 class="subHeading">
+            You may do more damage if you <br />
+            postpone treatment or try on your own
+          </h2>
+        </div>
+        <h2 class="subHeading white">to get:</h2>
+
+        <div class="bullets">
+          <div class="bullet aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1500">
+              <div class="icon" width="65px" height="65px">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 98.5 98.5" enable-background="new 0 0 98.5 98.5" xml:space="preserve">
+                      <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4
+                      C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"></path>
+                      </svg>
+              </div>                    <div class="text">
+                  10% discount when ordering from the website
+              </div>
+          </div>
+          <div class="bullet aos-init aos-animate" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1500">
+              <div class="icon" width="65px" height="65px">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 98.5 98.5" enable-background="new 0 0 98.5 98.5" xml:space="preserve">
+                      <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4
+                      C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"></path>
+                      </svg>
+              </div>                    <div class="text">
+                  Minimum 2 year warranty on all the Parts
+              </div>
+          </div>
+          <div class="bullet aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
+              <div class="icon" width="65px" height="65px">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 98.5 98.5" enable-background="new 0 0 98.5 98.5" xml:space="preserve">
+                      <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4
+                      C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"></path>
+                      </svg>
+              </div>
+              <div class="text">
+                  reliability, Quality, quick and custom service
+              </div>
+          </div>
+      </div>
+
+        <!--
+        <div class="row mt-4">
+          <div class="col-lg-4">
+            <input class="whiteInput" type="text" />
+          </div>
+          <div class="col-lg-4 my-4 my-lg-0">
+            <input class="whiteInput" type="text" />
+          </div>
+          <div class="col-lg-4">
+            <input class="whiteInput" type="text" />
+          </div>
+          <div class="col-lg-6 mt-4">
+            <div class="mainText text-white">
+              Leave details in the form now and one of our best experts will
+              contact you as soon as possible to fix all your problems and if
+              necessary make an appointment
+            </div>
+          </div>
+        </div>
+        -->
+        <button class="button-77" data-aos="zoom-in" type="button" id="cta_btn" onclick="scroll_to_secound_form()">For Free Estimate and
+          10% off!! <br>
+          &gt;&gt;click here&lt;&lt; </button>
+        <div class="row mt-5 pt-4">
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
+            <div class="getSectionCard">
+              <h2 class="getCardHeading">
+                Installing a <br />
+                new door
+              </h2>
+              <div class="formPoints">
+                <div class="formPoint">Single door</div>
+                <div class="formPoint">Double door</div>
+                <div class="formPoint"> Commercial door</div>
+                <div class="formPoint">Customized door</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
+            <div class="getSectionCard">
+              <h2 class="getCardHeading">
+                Installing <br />
+                new opener
+              </h2>
+              <div class="formPoints">
+                <div class="formPoint">Residential opener</div>
+                <div class="formPoint">Commercial opener</div>
+                <div class="formPoint">Gear Replacement</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
+            <div class="getSectionCard">
+              <h2 class="getCardHeading">
+                Installing  <br />
+                new parts
+              </h2>
+              <div class="formPoints">
+                <div class="formPoint">Remote, Key pad</div>
+                <div class="formPoint">Panel, Bottom Seal</div>
+                <div class="formPoint">Springs, and all brackets</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
+            <div class="getSectionCard">
+              <h2 class="getCardHeading">
+                Greg door repair
+              </h2>
+              <div class="formPoints">
+                <div class="formPoint">Broken spring</div>
+                <div class="formPoint">Broken cable</div>
+                <div class="formPoint">Door off trucks</div>
+                <div class="formPoint">Fix Noises</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
+            <div class="getSectionCard">
+              <h2 class="getCardHeading">
+                Electronic repair
+
+              </h2>
+              <div class="formPoints">
+                <div class="formPoint">Opener / gear repair
+                </div>
+                <div class="formPoint">Safety sensor Repair / installation
+                </div>
+                <div class="formPoint">Remote, keypad, and wall button
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos-delay="750" data-aos="zoom-in">
+            <div class="getSectionCard">
+              <h2 class="getCardHeading">
+                Installing  <br />
+                new parts
+              </h2>
+              <div class="formPoints">
+                <div class="formPoint">Prevenst any brakedowns
+                </div>
+                <div class="formPoint">Makes your door quieter
+                </div>
+                <div class="formPoint">Keeps you home and family safe
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clientsSection">
+      <div class="container">
+        <h2 class="subHeading">Our Happy Clients!</h2>
+        <div class="row mt-5">
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+            <div class="yellowCard">
+              <div class="content">
+                <div class="text">
+                  Excellent service throughout when my front door lock broke. They come out promptly, diagnosed the problem and took care of everything. I'll be recommanding AMPM to anyone else I know!!
+                </div>
+              </div>
+
+                <div class="person">
+                  <img width="340" height="340" src="https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-7.jpg" class="face" alt="" loading="lazy" srcset="https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-7.jpg 340w,
+                          https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-7-300x300.jpg 300w,
+                          https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-7-150x150.jpg 150w" sizes="(max-width: 340px) 100vw, 340px">
+                  <div class="pcontent">
+                      <div class="pname">Stella Alba</div>
+                      <div class="info">Home Owner</div>
+                  </div>
+              </div>
+            
+
+
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
+            <div class="yellowCard">
+
+              <div class="content">
+                <div class="text">
+                  AMPM Locksmiths designed and installed a full suited key system to our commercial premises in a highly professional and efficient manner, as always. Their knowledge and expertise in this field is unrivalled.
+                </div>
+              </div>
+
+                <div class="person">
+                  <img width="340" height="340" src="https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-5.jpg" class="face" alt="" loading="lazy" srcset="https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-5.jpg 340w,
+                                https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-5-300x300.jpg 300w,
+                                https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-5-150x150.jpg 150w" sizes="(max-width: 340px) 100vw, 340px">
+                  <div class="pcontent">
+                      <div class="pname">Stella Alba</div>
+                      <div class="info">Home Owner</div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="300">
+            <div class="yellowCard">
+              <div class="content">
+              <div class="text">
+                Great custiner service. Great advice and quality of products. Good stock of various hardware, handles, locks, cylinders, gearbox.... etc... This place rocks!.... loads better then Screwfix and other big name stores.
+              </div>
+            </div>
+              <div class="person">
+                <img width="340" height="340" src="https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-4.jpg" class="face" alt="" loading="lazy" srcset="https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-4.jpg 340w,
+                                    https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-4-300x300.jpg 300w,
+                                    https://ampmgaragedoorslocksmith.com/wp-content/uploads/2021/03/team-member-4-150x150.jpg 150w" sizes="(max-width: 340px) 100vw, 340px">
+                <div class="pcontent">
+                    <div class="pname">Stella Alba</div>
+                    <div class="info">Home Owner</div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="aboutSection" data-aos="flip-up" data-aos-duration="1500">
+      <div class="container" >
+        <h2 class="subHeading">About</h2>
+        <div class="content">
+          <div class="text">
+            AMPM doors is one of the best automatic garage door companies in the state of Atlanta.
+            This well-known position has been achieved over years of hard work, innovation, commitment to quality and reliable customer service.
+            We specialize in repairing and installing garage doors, solving any problem and making sure your door will serve you fault less as long as possible The fastest service on the market guaranteed.
+          </div>
+          <div class="vid">
+            <img src="./img/ampmVid.gif"></img>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carouselSection">
+      <div class="container">
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img src="./img/swiper/img1.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img2.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img3.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img4.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img5.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img6.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img7.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img8.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img9.jpeg" alt="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/swiper/img10.jpeg" alt="" />
+    </div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+        <!--
+
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="./img/swiper/img1.jpeg" alt="" />
+          </div>
+          <div class="item">
+            <img src="./img/swiper/img2.jpeg" alt="" />
+          </div>
+          <div class="item">
+            <img src="./img/swiper/img3.jpeg" alt="" />
+          </div>
+          <div class="item">
+            <img src="./img/swiper/img4.jpeg" alt="" />
+          </div>
+          <div class="item">
+            <img src="./img/swiper/img5.jpeg" alt="" />
+          </div>
+          <div class="item">
+            <img src="./img/swiper/img6.jpeg" alt="" />
+          </div>
+          <div class="item">
+            <img src="./img/swiper/img7.jpeg" alt="" />
+          </div>
+          <div class="item">
+            <img src="./img/swiper/img8.jpeg" alt="" />
+          </div>
+          <div class="item">
+            <img src="./img/swiper/img9.jpeg" alt="" />
+          </div>
+          <div class="item">
+            <img src="./img/swiper/img10.jpeg" alt="" />
+          </div>
+        </div>
+
+      -->
+
+        <h2 class="subHeading">
+          So what are you waiting for? et us give you a peaceful future, today!!
+        </h2>
+        <div class="mainText">
+          Leave details in the form for a
+
+
+          <div class="red-pen" id="redpen">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;" xml:space="preserve">
+                <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4"></path>
+            </svg>
+                10% discount!
+        </div>
+
+
+
+        </div>
+        <div class="mainText">
+          and one of our experts will contact you shortly!
+        </div>
+      </div>
+    </section>
+
+    <!-- Theme Selves Section -->
+    <section class="themeSelvesSection">
+      <img class="themeImg" src="./img/theme-selves-img.png" alt="" />
+      <div id="counters" class="container">
+        <h2 class="subHeading">Number Speak for Themselves:</h2>
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <div class="totalsCard">
+              <div data-num="2461" class="totals num">2,461</div>
+              <div class="totalsHeading">Satisfied Clients</div>
+            </div>
+          </div>
+          <div class="col-lg-4 my-5 my-lg-0">
+            <div class="totalsCard">
+              <div data-num="5" class="totals num">5</div>
+              <div class="totalsHeading">Years of Experience</div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="totalsCard">
+              <div data-num="1987" class="totals num">1,987</div>
+              <div class="totalsHeading">Locks Fixed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="mapSection">
+      <iframe
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCLmOyl1lZ1oOovi60v6HPnp6bY-7A80is&q=atlanta&zoom=12"
+        width="100%"
+        height="800"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <!-- Page Footer -->
+    <footer class="pageFooter">
+      <img class="footerImg" src="./img/footer-section.png" alt="" />
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="subHeading">
+              For a FREE consultation call and a FREE estimate, leave details in
+              the form now!
+            </h2>
+          </div>
+        </div>
+        <form action="https://forms.ms-global.co.il/submits/am-pm-garage-doors/" method="POST" style="width: 100%;" id="secound_form">
+        <div class="row mt-5">
+            <div class="col-lg-4">
+              <input class="whiteInput" type="text" name="name" required placeholder="name" />
+            </div>
+            <div class="col-lg-4 my-4 my-lg-0">
+              <input class="whiteInput" type="text" name="phone" required placeholder="phone" />
+            </div>
+            <div class="col-lg-4">
+              <button class="mainBtn">for a <b>FREE</b> estimate</button>
+            </div>
+        </div>
+      </form>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/spacial_animations.js" defer></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+      AOS.init();
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: "3",
+  spaceBetween: 30,
+
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+    </script>
+  </body>
+</html>
