@@ -104,6 +104,12 @@ body {
   margin-top: -290px;
 }
 
+@media screen and (min-width: 2000px) {
+  .formSection {
+    margin-top: -170px;
+  }
+}
+
 .subHeading {
   color: #3c3c3c;
   font-weight: 600;

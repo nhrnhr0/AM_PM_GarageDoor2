@@ -101,6 +101,9 @@ body {
     padding: 12em 0 1em 0;
     position: relative;
     margin-top: -290px;
+    @media screen and (min-width:2000px) {
+      margin-top: -170px;
+    }
   }
   .subHeading {
     color: #3c3c3c;
