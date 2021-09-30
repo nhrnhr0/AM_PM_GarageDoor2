@@ -81,7 +81,7 @@
           </div>
           <div class="col-lg-5 mt-5 mt-lg-0">
             <div class="contactForm" id="first_form">
-              <div class="contactFormHeading">
+              <div class="contactFormHeading" id="scroll_1_target">
                 Get 10% off now!! <br />
                 When book through here
               </div>
@@ -106,7 +106,7 @@
                   id=""
                   placeholder="phone"
                 />
-                <button class="mainBtn" id="scroll_1_target">FREE Estimate Now!</button>
+                <button class="mainBtn" >FREE Estimate Now!</button>
               </form>
             </div>
           </div>
@@ -383,9 +383,14 @@
 
     <!-- Carousel Section -->
     <section class="carouselSection">
+          <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
       <div class="container">
 <!-- Slider main container -->
+
 <div class="swiper">
+
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
@@ -423,9 +428,7 @@
   <!-- If we need pagination -->
   <div class="swiper-pagination"></div>
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+
 
   <!-- If we need scrollbar -->
   <div class="swiper-scrollbar"></div>
@@ -466,7 +469,10 @@
         </div>
 
       -->
-
+      </div>
+    </section>
+    <section class="afterCarouselSection">
+    <div class="container">
         <h2 class="subHeading">
           So what are you waiting for? et us give you a peaceful future, today!!
         </h2>
@@ -488,8 +494,8 @@
           and one of our experts will contact you shortly!
         </div>
       </div>
+    
     </section>
-
     <!-- Theme Selves Section -->
     <section class="themeSelvesSection">
       <img class="themeImg" src="./img/theme-selves-img.png" alt="" />
@@ -545,8 +551,21 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
-  slidesPerView: "3",
-  spaceBetween: 30,
+  
+  breakpoints: {
+          640: {
+            slidesPerView: "1",
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: "3",
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: "3",
+            spaceBetween: 20,
+          },
+        },
 
 
   // If we need pagination
@@ -629,6 +648,7 @@ const swiper = new Swiper('.swiper', {
               <button class="mainBtn">for a <b>FREE</b> estimate</button>
             </div>
         </div>
+        <img src="./img/logo_outline.png" id="logo_img" alt="" srcset="">
       </form>
       </div>
     </footer>

@@ -1,5 +1,5 @@
 // Owl
-$(".owl-carousel").owlCarousel({
+/*$(".owl-carousel").owlCarousel({
   loop: true,
   margin: 35,
   nav: false,
@@ -19,4 +19,4 @@ $(".owl-carousel").owlCarousel({
       items: 3,
     },
   },
-});
+});*/
