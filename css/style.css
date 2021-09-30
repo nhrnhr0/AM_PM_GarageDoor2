@@ -140,13 +140,11 @@ body {
 .formSection {
   padding: 12em 0 1em 0;
   position: relative;
-  margin-top: -290px;
-}
-
-@media screen and (min-width: 2000px) {
-  .formSection {
-    margin-top: -170px;
-  }
+  margin-top: -30vh;
+  /*margin-top: -290px;
+    @media screen and (min-width:1925px) {
+      margin-top: -170px;
+    }*/
 }
 
 .subHeading {
@@ -242,6 +240,7 @@ body {
 /* Details Section */
 .detailsSection {
   padding: 4em 0;
+  overflow: hidden;
 }
 
 .detailsSection .subHeading {
@@ -499,6 +498,10 @@ body {
   font-weight: bold;
 }
 
+.about-wraper {
+  overflow: hidden;
+}
+
 /* About Section */
 .aboutSection {
   padding: 2em 0;
@@ -618,13 +621,17 @@ body {
   margin-top: -13em;
 }
 
-.pageFooter #secound_form #logo_img {
+.end-logo {
+  background-color: #E9BF39;
+}
+
+.end-logo #logo_img {
   padding-top: 15px;
   width: 100%;
 }
 
 @media screen and (min-width: 600px) {
-  .pageFooter #secound_form {
+  .end-logo {
     display: none;
   }
 }
