@@ -9,6 +9,26 @@ body {
 .swiper {
   width: 100%;
   height: auto;
+  /*.swiper-button-next {
+    margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    width: 45px;
+    height: 45px;
+    transform: translateY(-50%);
+  }
+
+
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    width: 45px;
+    height: 45px;
+    transform: translateY(-50%);
+    margin-top: 0px;
+  }*/
 }
 
 .swiper .swiper_wrap {
@@ -20,31 +40,15 @@ body {
   text-align: left;
 }
 
-.swiper .swiper-button-next {
-  margin-top: 0px;
-  position: absolute;
-  top: 50%;
-  right: -40px;
-  width: 45px;
-  height: 45px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.swiper .swiper-button-prev {
-  position: absolute;
-  top: 50%;
-  left: -40px;
-  width: 45px;
-  height: 45px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  margin-top: 0px;
-}
-
 /* carousel section */
 .carouselSection {
   position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .carouselSection .swiper-button-next, .carouselSection .swiper-button-prev {
+    display: none;
+  }
 }
 
 .afterCarouselSection {
@@ -558,6 +562,12 @@ body {
 /* Carousel Section */
 .carouselSection {
   padding: 3em 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .carouselSection {
+    padding: 0.5em 0;
+  }
 }
 
 .carouselSection .subHeading {
