@@ -608,6 +608,13 @@ body {
   top: 0;
 }
 
+@media screen and (max-width: 960px) {
+  .themeSelvesSection .themeImg {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .themeSelvesSection .subHeading {
   z-index: 2;
   font-size: 2.2em;
@@ -653,13 +660,30 @@ body {
   padding: 2%;
 }
 
+@media screen and (max-width: 960px) {
+  .pageFooter .container-t {
+    padding-top: 10vh;
+  }
+  .pageFooter .footerImg {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .end-logo {
   background-color: #E9BF39;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .end-logo #logo_img {
   padding-top: 15px;
-  width: 100%;
+  width: 60%;
+  padding-top: 67px;
 }
 
 @media screen and (min-width: 600px) {

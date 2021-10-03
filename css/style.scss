@@ -588,6 +588,9 @@ body {
   width: 100%;
   height: 100%;
   top: 0;
+  @media screen and(max-width:960px) {
+    object-fit: cover;
+  }
 }
 
 .themeSelvesSection .subHeading {
@@ -633,14 +636,24 @@ body {
   }
 
   #secound_form {}
+
+  @media screen and(max-width:960px) {
+    .container-t {
+      padding-top: 10vh;
+    }
+    .footerImg{object-fit: cover;}
+  }
 }
 
 .end-logo {
   background-color: #E9BF39;
+  display: flex;
+  justify-content: center;
 
   #logo_img {
     padding-top: 15px;
-    width: 100%;
+    width: 60%;
+    padding-top: 67px;
   }
 
   @media screen and(min-width: 600px) {
