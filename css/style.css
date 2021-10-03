@@ -671,6 +671,10 @@ body {
   padding: 2%;
 }
 
+.pageFooter .container-t .row {
+  width: 100%;
+}
+
 @media screen and (max-width: 960px) {
   .pageFooter .container-t {
     padding-top: 10vh;

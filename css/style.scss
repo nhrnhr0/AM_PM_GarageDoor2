@@ -7,7 +7,6 @@ body {
 
   /* margin: 0; */
 }
-
 .swiper {
   width: 100%;
   height: auto;
@@ -640,6 +639,9 @@ body {
   z-index: 1;
   .container-t {
     padding:2%;
+    .row {
+      width: 100%;
+    }
   }
 
   #secound_form {}
