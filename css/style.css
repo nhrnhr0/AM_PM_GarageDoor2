@@ -151,6 +151,19 @@ body {
     }*/
 }
 
+@media screen and (max-width: 960px) {
+  .formSection {
+    margin-top: -45vh;
+    /*.subHeading {
+        padding-top: 150px;
+      }  */
+  }
+  .formSection .formSectionImg {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .subHeading {
   color: #3c3c3c;
   font-weight: 600;
@@ -636,6 +649,10 @@ body {
   z-index: 1;
 }
 
+.pageFooter .container-t {
+  padding: 2%;
+}
+
 .end-logo {
   background-color: #E9BF39;
 }
@@ -714,10 +731,10 @@ body {
   .clientsSection .yellowCard {
     margin-bottom: 2em;
   }
-  .pageFooter {
+  /*.pageFooter {
     padding: 30em 0 2em 0;
-    margin-top: -26em;
-  }
+    margin-top: -28em;
+  }*/
   .mapSection {
     margin-top: -14em;
   }

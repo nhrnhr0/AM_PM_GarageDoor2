@@ -162,6 +162,16 @@ body {
     @media screen and (min-width:1925px) {
       margin-top: -170px;
     }*/
+    @media screen and (max-width:960px) {
+      margin-top: -45vh;
+      .formSectionImg {
+        object-fit: cover;
+      }
+      /*.subHeading {
+        padding-top: 150px;
+      }  */
+    }
+    
 }
 
 .subHeading {
@@ -618,6 +628,9 @@ body {
   position: relative;
   margin-top: -13em;
   z-index: 1;
+  .container-t {
+    padding:2%;
+  }
 
   #secound_form {}
 }
@@ -714,10 +727,10 @@ body {
     margin-bottom: 2em;
   }
 
-  .pageFooter {
+  /*.pageFooter {
     padding: 30em 0 2em 0;
-    margin-top: -26em;
-  }
+    margin-top: -28em;
+  }*/
 
   .mapSection {
     margin-top: -14em;
