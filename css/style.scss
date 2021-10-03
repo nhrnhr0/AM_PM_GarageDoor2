@@ -617,11 +617,18 @@ body {
 
 /* Map Section */
 .mapSection {
+  overflow: hidden;
   margin-top: -10em;
   position: relative;
   z-index: -10;
   img {
     width: 100%;
+    @media screen and (max-width:960px) {
+      width: auto;
+      height: 500px;
+      transform: translate(-25%,0);
+      max-width: none;
+    }
   }
 }
 

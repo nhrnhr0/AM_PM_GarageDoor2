@@ -639,6 +639,7 @@ body {
 
 /* Map Section */
 .mapSection {
+  overflow: hidden;
   margin-top: -10em;
   position: relative;
   z-index: -10;
@@ -646,6 +647,16 @@ body {
 
 .mapSection img {
   width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  .mapSection img {
+    width: auto;
+    height: 500px;
+    -webkit-transform: translate(-25%, 0);
+            transform: translate(-25%, 0);
+    max-width: none;
+  }
 }
 
 /* Page Footer */
