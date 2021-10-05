@@ -6,6 +6,14 @@ body {
   /* margin: 0; */
 }
 
+span.cls-bold {
+  font-weight: 900;
+}
+
+span.cls-larger {
+  font-size: larger;
+}
+
 .swiper {
   width: 100%;
   height: auto;
@@ -104,7 +112,7 @@ body {
   background-size: cover;
   min-height: 100vh;
   background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 
