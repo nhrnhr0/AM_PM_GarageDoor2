@@ -53,12 +53,6 @@ span.cls-larger {
   position: relative;
 }
 
-@media only screen and (max-width: 600px) {
-  .carouselSection .swiper-button-next, .carouselSection .swiper-button-prev {
-    display: none;
-  }
-}
-
 .afterCarouselSection {
   padding: 3em 0;
 }
