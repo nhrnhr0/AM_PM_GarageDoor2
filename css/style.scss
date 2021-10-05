@@ -457,13 +457,14 @@ span.cls-larger {
   background-size: cover;
   min-height: 65vh;
   position: relative;
+  height: 100%;
 }
 
 .clientsSection .yellowCard {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 
   .content {
     padding-top: 25px;
