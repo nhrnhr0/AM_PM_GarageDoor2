@@ -470,6 +470,13 @@ span.cls-larger {
   height: 100%;
 }
 
+@media screen and (max-width: 950px) {
+  .clientsSection .col-lg-4 .yellowCard {
+    margin: 1%;
+    border: 1px solid blue;
+  }
+}
+
 .clientsSection .yellowCard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -552,7 +559,7 @@ span.cls-larger {
 }
 
 .aboutSection .container .content .text {
-  font-size: x-large;
+  font-size: large;
 }
 
 .aboutSection .subHeading {
@@ -683,6 +690,10 @@ span.cls-larger {
 
 .pageFooter .container-t .row {
   width: 100%;
+}
+
+.pageFooter .container-t .row .subHeading {
+  font-weight: 400;
 }
 
 @media screen and (max-width: 960px) {

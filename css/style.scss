@@ -458,8 +458,16 @@ span.cls-larger {
   min-height: 65vh;
   position: relative;
   height: 100%;
+  
+    
+  
 }
-
+.clientsSection .col-lg-4 .yellowCard {
+  @media screen and (max-width:950px) {
+    margin: 1%;
+    border: 1px solid blue;
+  }
+}
 .clientsSection .yellowCard {
   display: flex;
   justify-content: center;
@@ -533,7 +541,7 @@ span.cls-larger {
       align-items: center;
 
       .text {
-        font-size: x-large;
+        font-size: large;
       }
     }
   }
@@ -648,6 +656,9 @@ span.cls-larger {
     padding:2%;
     .row {
       width: 100%;
+      .subHeading{
+        font-weight: 400;
+      }
     }
   }
 
