@@ -456,19 +456,17 @@ span.cls-larger {
   margin-top: -5.3em;
 }
 
-.clientsSection .yellowCard {
+.clientsSection .col-lg-4 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.clientsSection .col-lg-4 .yellowCard {
   background-image: url("../img/photo_2021-10-05_21-12-18.jpg");
   background-size: cover;
   min-height: 65vh;
   position: relative;
   height: 100%;
-}
-
-@media screen and (max-width: 950px) {
-  .clientsSection .col-lg-4 .yellowCard {
-    margin: 1%;
-    border: 1px solid blue;
-  }
 }
 
 .clientsSection .yellowCard {

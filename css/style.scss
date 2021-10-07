@@ -448,20 +448,23 @@ span.cls-larger {
 }
 
 .clientsSection .yellowCard {
-  background-image: url("../img/photo_2021-10-05_21-12-18.jpg");
-  background-size: cover;
-  min-height: 65vh;
-  position: relative;
-  height: 100%;
+
   
     
   
 }
-.clientsSection .col-lg-4 .yellowCard {
-  @media screen and (max-width:950px) {
-    margin: 1%;
-    border: 1px solid blue;
-  }
+.clientsSection {
+  .col-lg-4 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .yellowCard {
+      background-image: url("../img/photo_2021-10-05_21-12-18.jpg");
+      background-size: cover;
+      min-height: 65vh;
+      position: relative;
+      height: 100%;
+    }
+  } 
 }
 .clientsSection .yellowCard {
   display: flex;
