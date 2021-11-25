@@ -53,7 +53,24 @@
     
     <link rel="stylesheet" href="./css/style.css" />
 
-    
+    <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '698398551120173');
+  fbq('track', 'PageView');
+  fbq('track', 'ViewContent');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=698398551120173&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
   </head>
   <body>
     <!-- Hero Section -->
@@ -72,7 +89,7 @@
     </section>
 
     <!-- Form Section -->
-    <section class="formSection">
+    <section class="formSection" id="scroll_1_target">
       <img class="formSectionImg" src="./img/form-section.png" alt="" />
       <div class="container">
         <div class="row">
@@ -98,7 +115,7 @@
           </div>
           <div class="col-lg-5 mt-5 mt-lg-0">
             <div class="contactForm" id="first_form">
-              <div class="contactFormHeading" id="scroll_1_target">
+              <div class="contactFormHeading" >
                 Get 10% off now!! <br />
                 If you book through <span class="cls-bold cls-larger">HERE</span>
                 
@@ -495,7 +512,7 @@
         <div class="row mt-5">
           <div class="col-lg-4">
             <div class="totalsCard">
-              <div data-num="6427" class="totals num">6,427</div>
+              <div data-num="9427" class="totals num">9,427</div>
               <div class="totalsHeading">Satisfied Clients</div>
             </div>
           </div>
@@ -508,7 +525,7 @@
           <div class="col-lg-4">
             <div class="totalsCard">
               <div data-num="4763" class="totals num">4,763</div>
-              <div class="totalsHeading">Locks Fixed</div>
+              <div class="totalsHeading">Doors Fixed</div>
             </div>
           </div>
         </div>

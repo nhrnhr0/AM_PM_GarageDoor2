@@ -86,10 +86,9 @@ function animateCountersListener() {
       for (var i = 0; i < counterDivs.length; i++) {
         var coutDom = counterDivs[i];
         console.log(coutDom);
-        var render_time = Math.max(coutDom.dataset.num, 1500) + Math.random() * 1500;
+        var render_time = Math.min(Math.max(coutDom.dataset.num, 1000), 2000) + Math.random() * 2000;
         animateCounters(counterDivs[i], 0, coutDom.dataset.num, render_time);
       }
-
     }
   }
 }
